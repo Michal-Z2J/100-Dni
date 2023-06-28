@@ -14,16 +14,13 @@ Itd.
 '''
 
 dayNumber = 1 
-taskNumber = [1, 2, 3, 4, 5]
+taskNumber = 0
 taskDescription = ["Zadanie A", "Zadanie B", "Zadania C", "Zadanie D", "Zadanie E"]
-number = 0
 
-while True:
-    if dayNumber > 21:
-        break
-    elif number >= 5:
-        number = 0
+while dayNumber <= 21:
+    if taskNumber == 5:
+        taskNumber = 0
         dayNumber = dayNumber + 1
     else:
-        print(dayNumber, " - ", taskNumber[number], " - ", taskDescription[number])
-        number = number + 1
+        print(dayNumber, " - ", taskNumber + 1, " - ", taskDescription[taskNumber])
+        taskNumber = taskNumber + 1
