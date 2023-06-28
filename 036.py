@@ -22,5 +22,5 @@ while dayNumber <= 21:
         taskNumber = 0
         dayNumber = dayNumber + 1
     else:
-        print(dayNumber, " - ", taskNumber + 1, " - ", taskDescription[taskNumber])
+        print(dayNumber, taskNumber + 1, taskDescription[taskNumber], sep=" - ")
         taskNumber = taskNumber + 1
