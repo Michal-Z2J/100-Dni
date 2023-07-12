@@ -1,4 +1,3 @@
-# This Python file uses the following encoding: Windows-1250
 import os, sys
 
 WEIGHT_UNITS = ["mg", "g", "dg", "kg", "t"]

@@ -1,6 +1,3 @@
-# This Python file uses the following encoding: Windows-1250
-import os, sys
-
 """
 Stwórz program, który będzie przechowywał słownik z nazwami państw i ich stolicami. 
 Następnie poproś użytkownika o podanie nazwy państwa, a program ma wyświetlić stolicę tego państwa. 

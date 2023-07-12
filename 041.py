@@ -1,5 +1,3 @@
-# This Python file uses the following encoding: Windows-1250
-import os, sys
 """
 Masz napisać kalkulator :)
 Poproś użytkownika o dwie liczby (najpierw jedną, potem drugą)
@@ -21,7 +19,9 @@ def calculation(number1, number2, char):
 
 while True:
     firstNumber = input("Podaj pierwszą liczbę: ")
+    firstNumber = float(firstNumber)
     secondNumber = input("Podaj drugą liczbę: ")
+    secondNumber = float(secondNumber)
     operation = input("Podaj działanie jakie ma zostać wykonane: ")
     result = calculation(firstNumber, secondNumber, operation)
     print("Wynik: ", result)

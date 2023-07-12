@@ -1,6 +1,3 @@
-# This Python file uses the following encoding: Windows-1250
-import os, sys
-
 """
 Dzisiaj prościutko. Napisz funkcję, która z podanej listy zwróci 
 wartość minimalną i maksymalną jednocześnie :)
