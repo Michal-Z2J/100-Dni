@@ -13,7 +13,10 @@ def perform_calculation(num1, num2, operator):
     elif operator == "*":
         return num1 * num2
     elif operator == "/":
-        return num1 / num2
+        if num2 == 0:
+            return "One does not simply divide by zero!"
+        else:
+            return num1 / num2
     elif operator == "**":
         return num1**num2
     elif operator == "%":
@@ -59,13 +62,8 @@ def run_calculator():
     return True
 
 def desc():
-    print("Welcome to the calculator and weight/length converter.")
-    print(
-        "Calculator supports addition, subtraction, multiplication, division, exponentiation and finding the remainder of the division."
-    )
-    print("Converter allows converting length units: mm, cm, dm, m, km, mi")
-    print("Converter allows converting weight units: g, dg, kg, t, lb, km")
-    print("Type 'calc' if you want to use calculator or 'conv' to use converter.")
+    print("Welcome to the calculator.")
+    print("Calculator supports addition, subtraction, multiplication, division, exponentiation and finding the remainder of the division.")
     print("To exit, type 'exit'.")
     print()
 
