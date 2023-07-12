@@ -62,6 +62,6 @@ def get_country():
 
 user_country = get_country()
 if user_country in  countries:
-    print(countries[user_country])
+    print("Państwo: ", country, "Stolica: ", countries[user_country])
 else:
     print("Błąd. Podana nazwa państwa nie istnieje lub nie znajduje się w słowniku.")
