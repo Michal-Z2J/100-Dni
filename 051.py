@@ -6,7 +6,7 @@ Napisz aplikację, która:
 
 def replace_separator(word):
     word = word.replace('!', ' ').replace('/', ' ').replace('|', ' ').replace(';', ' ').replace(':', ' ').replace('.', ' ').replace('\\', ' ').replace('?', ' ')
-    word = word.replace(',', ' ')
+    word = word.replace(',', ' ').replace('"', ' ').replace('(', ' ').replace(')', ' ').replace('[', ' ').replace(']', ' ').replace('}', ' ').replace('{', ' ')
     return word
 
 def add_to_one_list(new_list, initial_list):
@@ -24,5 +24,6 @@ while True:
         whole_list = add_to_one_list(separate_words, whole_list)
     else:        
         whole_input_set = set(whole_list)
-        print(len(whole_input_set), ": ", whole_input_set)
+        print("Ilość wyrazów podanych przez użytkownika wynosi: ", len(whole_list))
+        print("Ilość wyrazów (bez duplikatów) podanych przez użytkownika wynosi: ", len(whole_input_set))
         break
