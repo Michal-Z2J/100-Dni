@@ -18,34 +18,22 @@ def substring(string, index):
 def check_negative_indexing(i):
     if i[0] < 0:
         i[0] = int(len(word) + i[0])
-    else:
-        i[0] = i[0]
     if i[1] < 0:
         i[1] = int(len(word) + i[1])
-    else:
-        i[1] = i[1]
     return i
 
 def check_string(i):
     if type(i[0]) is str:
         i[0] = word.index(i[0])
-    else:
-        i[0] = i[0]
     if type(i[1]) is str:
         i[1] = word.index(i[1])
-    else:
-        i[1] = i[1]
     return i
 
 def check_colon(i):
     if i[0] == ":":
         i[0] = 0
-    else:
-        i[0] = i[0]
     if i[1] == ":":
         i[1] = len(word)
-    else:
-        i[1] = i[1]
     return i
 
 test = [[0, 4], [-5, ":"], ["To", ":"], [3, 9]]
