@@ -8,15 +8,22 @@ def calculation(number1, number2):
         return number1 / number2
     except ZeroDivisionError:
         return "Error! One does not simply divide by zero!"
+    
+print("Witaj w programie do dzielenia dwóch liczb.")
+print("Wprowadzanie liczb zatwierdź przez naciśnięcie klawisza 'Enter'.")
+print("Aby zakończyć działanie programu naciśnij 'Enter' bez wprawadzania żadnych danych.")
 
 while True:
-    try:
+    try:        
         firstNumber = input("Podaj pierwszą liczbę: ")
         firstNumber = float(firstNumber)
         secondNumber = input("Podaj drugą liczbę: ")
         secondNumber = float(secondNumber)
         result = calculation(firstNumber, secondNumber)
-        print("Wynik: ", result)
-    except ValueError:
-        print("Zakończono działanie programu.")
-        break
+        print("Wynik:", result)
+    except Exception as error:
+        if str(error) == "could not convert string to float: ''":
+            print("Zakończono działanie programu.")
+            break
+        else:
+            print("Błąd programu:", error)        
