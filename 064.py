@@ -14,7 +14,7 @@ print(f'Twoja lista składa się z {len(no_duplicates_list)} produktów: ')
 for i in no_duplicates_list:
     if i in product_price:
         price += product_price[i][0]
-        print(f'{i}   - cena: {product_price[i][0]} za {product_price[i][1]}')
+        print(f'{i:6} - cena: {product_price[i][0]} za {product_price[i][1]}')
 
 result = f'Cena za wszystkie produkty wynosi: {price:.02f}'
 print(result)
