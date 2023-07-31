@@ -1,0 +1,6 @@
+Chleb,2.50
+Mleko,2.99
+Jajka,8.50
+Ser,12.99
+Masło,6.99
+Cukier,3.20
