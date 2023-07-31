@@ -16,3 +16,12 @@ for i in list_from_file:
 for x in products_list:
     if float(x[1]) < 8:
         print(f'{x[0]:6} - {x[1]}')
+
+#-----Używając słownika-----
+print("-------------")
+products_dict = {}
+for j in list_from_file:
+    nazwa, cena = j.split(",")
+    products_dict[nazwa] = float(cena)
+    if float(cena) < 8:
+        print(f'{nazwa:6} - {cena}')
