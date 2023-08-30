@@ -24,7 +24,7 @@ def get_ID(url):
     return hashlib.md5(bytes(url, 'utf-8')).hexdigest()
 
 def shorten_ID(hash):
-    result = base64.b64encode(bytes(hash, 'utf-8')[:10])
+    result = base64.b64encode(bytes(hash, 'utf-8')[:8])
     return result.decode().strip('=')
 
 def read_file(file_path):
@@ -73,5 +73,6 @@ while True:
         else:
             ID_hash = get_ID(user_url)
             ID_short = shorten_ID(ID_hash)
+            print("Skrót do podanego adresu to: ", ID_short)
             add_to_file(file_path, ID_short, user_url)
             url_dict = read_file(file_path)
