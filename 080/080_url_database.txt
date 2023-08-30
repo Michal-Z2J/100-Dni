@@ -1,0 +1,5 @@
+ZDE1MDcwNzg0Yg	https://docs.python.org/3/tutorial/datastructures.html
+YjBiYmJhOTcwYw	https://www.w3schools.com/python/ref_dictionary_values.asp
+YzVkNDE0YzM3Zg	https://www.tutorialspoint.com/How-can-I-convert-bytes-to-a-Python-string
+YjEzMmIxODE0MA	https://docs.python.org/3/library/base64.html#module-base64
+NjczMDcyMTNlYQ	https://stackoverflow.com/questions/2510716/short-python-alphanumeric-hash-with-minimal-collisions
